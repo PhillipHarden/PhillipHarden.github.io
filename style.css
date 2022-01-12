@@ -1,72 +1,35 @@
+/*-- The "*" Selector selects all elements  --*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-color: black;
     background-image: url("images/crowdjpg.jpg");
     background-repeat: no-repeat;
+    /* FIXED: The background image will not scroll with the page*/
     background-attachment: fixed;
     color: whitesmoke;
     padding: 2em;
     font-family: Helvetica;
 }
-
-.mainContent{
-    margin-left: 20%;
-    margin-right: 20%;
-    text-align: center;
-    font-size: 16px;
-}
-
-#logoImage{
-    width: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#logoImage:hover{
-    opacity: 0.5;
-}
-
+/*-----REUSABLE STYLES-----------------------------*/
 .lgHeader{
     font-size: 60px;
     font-family: Impact;
     text-align: center;
+    padding-bottom: 50px;
 }
-
 .lgHeader:hover{
     color: red;
 }
-
-
-/*-----VARIOUS STYLES-----------------------------*/
 .centered{
     text-align: center;
 }
 
-
-
-.hoverRed:hover{
-    color: red;
-}
-
-
-/*-----IMAGES---------------------------------*/
-.crewImg{
-    width: 200px;
-    opacity: 0.5;
-}
-.crewImg:hover{
-    opacity: 1.0;
-}
-
-.cityImg{
-    opacity: 0.5;
-    width: 300px;
-}
-.cityImg:hover{
-    opacity: 1.0;
-}
-
-/*-----LISTS---------------------------------*/
+/*--GENERAL STYLES-------*/
 ul li{
     padding: 1em;
     list-style-type: none;
@@ -82,9 +45,137 @@ h6{
     font-size: 30px;
     font-style: italic;
 }
-/*-----FOOTER-----------------------------*/
+
+section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/*--HEADER------------------------------------------------------------------------------------------------------------*/
+header {
+    background-size: cover;
+    background-position: center;
+    height: 100vw;
+    background-attachment: fixed;
+}
+
+/*--NAVIGATION BAR--*/
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #d50000;
+}
+
+#logoImage{
+    height: 200px;
+    width: auto;
+    float: top;
+    margin-top: 50px;
+}
+#logoImage:hover{
+    opacity: 0.5;
+}
+
+.header-text{
+    text-align: center;
+    font-family: Impact;
+    /* Sizing Unit "vmin" is relative to 1% of viewport's* smaller dimension */
+    font-size: 6vmin;
+    position: center;
+    margin-top: 150px;
+}
+/*-----ABOUT SECTION--------------------------------------------------------------------*/
+#about{
+    background-color: black;
+    height: 750px;
+    margin-top: 150px;
+}
+.aboutText{
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    font-size: 3vmin;
+}
+/*-----SQUAD/CREW SECTION---------------------------------------------------------------------------------------------*/
+#squad{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/turntable.jpg");
+    /*cover	Resize the background image to cover the entire container,
+    even if it has to stretch the image or cut a little bit off one of the edges*/
+    background-size: cover;
+    background-attachment: fixed;
+}
+.squadImg{
+    width: 200px;
+    opacity: 0.5;
+}
+.squadImg:hover{
+    opacity: 1.0;
+}
+/*-----CITIES SECTION-------------------------------------------------------------------------------------------------*/
+#cities{
+    background-image: url("images/fence.jpg");
+    /*cover	Resize the background image to cover the entire container,
+    even if it has to stretch the image or cut a little bit off one of the edges*/
+    background-size: cover;
+    background-attachment: fixed;
+}
+.citiesText{
+    color: black;
+}
+.citiesHeader{
+    font-size: 60px;
+    font-family: Impact;
+    text-align: center;
+    color: black;
+    padding-bottom: 50px;
+}
+.citiesImage{
+    opacity: 0.5;
+    width: 300px;
+}
+.citiesImage:hover{
+    opacity: 1.0;
+}
+
+/*--SOCIAL MEDIA------------------------------------------------------------------------------------------------------*/
+#socialMedia{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/turntable.jpg");
+    /*cover	Resize the background image to cover the entire container,
+    even if it has to stretch the image or cut a little bit off one of the edges*/
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.socialMediaList{
+    text-align: center;
+}
+
+.socialMediaIcon{
+    width: 50px;
+}
+.socialMediaIcon:hover{
+    opacity: 0.5;
+}
+
+
+
+/*--FOOTER------------------------------------------------------------------------------------------------------------*/
 #footer{
     font-size: 10px;
     text-align: center;
     padding-top: 150px;
 }
+/*--------------------------------------------------------------------------------------------------------------------*/
