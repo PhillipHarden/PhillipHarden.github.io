@@ -13,25 +13,26 @@
 <!-- The <header> element represents a container for introductory content or a set of navigational links. ------------->
 <header>
     <nav>
-        <div class="row">
+        <div>
             <ul class="main-nav">
                 <!--The href attribute specifies the link's destination:
                     <a href="https://www.w3schools.com">Visit W3Schools</a>
                     In My code I am making the destination be a section of the page by giving
                     each section a class name and then using that class name as the destination-->
-                <li><a href="#about">About</a></li>
-                <li><a href="#squad">The Squad</a></li>
-                <li><a href="#cities">Cities</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#squad-section">The Squad</a></li>
+                <li><a href="#cities-section">Cities</a></li>
+                <li><a href="#social-media-section">Social Media</a></li>
             </ul>
         </div>
     </nav>
-    <img src="images/the47spotlogo.png" alt="The 47 Spot logo" ID="logoImage">
+    <img src="images/the47spotlogo.png" alt="The 47 Spot logo" ID="logo-image">
     <p class="header-text">HIP HOP NIGHT <br>ONCE A MONTH IN ATLANTA AND IN COLUMBUS, GEORGIA!</p>
 </header>
 <!--ABOUT SECTION------------------------------------------------------------------------------------------------------>
-<section ID="about">
-    <h2  class="lgHeader">About Us</h2>
-    <p class="aboutText">
+<section ID="about-section">
+    <h2  class="large-header">About Us</h2>
+    <p class="about-text">
         This is a Hip Hop Night designed to have the enthusiasm of a concert with the opportunity for networking and
         discovering great Christian Hip Hop artists. Live DJs, Hip Hop Artists from the Southeast Region of the USA and
         <strong>beyond</strong>, great people and its Rated E for Everyone. No Cover Charge (contributions will be accepted). This
@@ -41,71 +42,73 @@
     </p>
 </section>
 <!--OUR CREW SECTION--------------------------------------------------------------------------------------------------->
-<section ID="squad">
-    <h2 class="lgHeader">The Squad</h2>
+<section ID="squad-section">
+    <h2 class="large-header">The Squad</h2>
     <ul class="centered">
         <li>
-            <img src="images/adam.jpeg" alt="Bishop Adam" class="squadImg"> <p>Bishop Adam</p>
+            <img src="images/adam.jpeg" alt="Bishop Adam" class="squad-image"> <p>Bishop Adam</p>
         </li>
         <li>
-            <img src="images/belinda.jpg" alt="Belinda" class="squadImg"> <p>Belinda</p>
+            <img src="images/belinda.jpg" alt="Belinda" class="squad-image"> <p>Belinda</p>
         </li>
         <li>
-            <img src="images/arek.jpg" alt="Arek" class="squadImg"> <p>Arek T Loyal</p>
+            <img src="images/arek.jpg" alt="Arek" class="squad-image"> <p>Arek T Loyal</p>
         </li>
         <li>
-            <img src="images/stClair.jpg" alt="St Clair" class="squadImg"> <p>St Clair</p>
+            <img src="images/stClair.jpg" alt="St Clair" class="squad-image"> <p>St Clair</p>
         </li>
     </ul>
     <ul class="centered">
         <li>
-            <img src="images/cue.jpg" alt="DJ Cue" class="squadImg"> <p>DJ Cue</p>
+            <img src="images/cue.jpg" alt="DJ Cue" class="squad-image"> <p>DJ Cue</p>
         </li>
         <li>
-            <img src="images/zeal.jpeg" alt="DJ Zeal" class="squadImg"> <p>DJ Zeal</p>
+            <img src="images/zeal.jpeg" alt="DJ Zeal" class="squad-image"> <p>DJ Zeal</p>
         </li>
         <li>
-            <img src="images/phil.jpg" alt="Phil" class="squadImg"> <p>Spirit Phild</p>
+            <img src="images/phil.jpg" alt="Phil" class="squad-image"> <p>Spirit Phild</p>
         </li>
         <li>
-            <img src="images/dadre.jpg" alt="DJ DaDre" class="squadImg"> <p>DJ DaDre</p>
+            <img src="images/dadre.jpg" alt="DJ DaDre" class="squad-image"> <p>DJ DaDre</p>
         </li>
     </ul>
 </section>
 <!--OUR LOCATIONS SECTION---------------------------------------------------------------------------------------------->
-<section ID="cities">
-    <h6 class="lgHeader citiesHeader">Our Locations</h6>
-    <h4  class="citiesText centered">The 47 Spot is held the 1st Friday of each month in Atlanta and the 3rd Friday of each month in Columbus, GA.</h4>
+<section ID="cities-section">
+    <h6 class="large-header cities-header">Our Locations</h6>
+    <h4  class="cities-text centered">The 47 Spot is held the 1st Friday of each month in Atlanta and the 3rd Friday of each month in Columbus, GA.</h4>
+    <br>
     <ol class="centered">
         <li>
-            <p class="citiesText">Atlanta, GA</p>
-            <img src="images/atlanta.jpeg" alt="Atlanta, GA" class="citiesImage">
-            <p class="citiesText">1st Friday of every month!</p>
+            <p class="cities-text">Atlanta, GA</p>
+            <img src="images/atlanta.jpeg" alt="Atlanta, GA" class="cities-image">
+            <p class="cities-text">1st Friday of every month!</p>
         </li>
         <li>
-            <p class="citiesText">Columbus, GA</p>
-            <img src="images/columbus.jpeg" alt="Columbus, GA" class="citiesImage">
-            <p class="citiesText">3rd Friday of every month!</p>
+            <p class="cities-text">Columbus, GA</p>
+            <img src="images/columbus.jpeg" alt="Columbus, GA" class="cities-image">
+            <p class="cities-text">3rd Friday of every month!</p>
         </li>
     </ol>
 </section>
 <!--SOCIAL MEDIA------------------------------------------------------------------------------------------------------->
-<section ID="socialMedia">
-    <h1 class="lgHeader">Social Media</h1>
+<section ID="social-media-section">
+    <h2 class="large-header">Social Media</h2>
     <div>
-        <ul class="socialMediaList">
-            <li><a href="#"><img src="images/facebook.png" alt="facebook icon" class="socialMediaIcon"></a></li>
-            <li><a href="#"><img src="images/twitter.png" alt="twitter icon" class="socialMediaIcon"></a></li>
-            <li><a href="#"><img src="images/instagram.png" alt="instagram icon" class="socialMediaIcon"></a></li>
-            <li><a href="#"><img src="images/tiktok.png" alt="tiktok icon" class="socialMediaIcon"></a></li>
-            <li><a href="#"><img src="images/youtube.png" alt="youtube icon" class="socialMediaIcon"></a></li>
+        <ul class="centered">
+            <li><a href="#"><img src="images/facebook.png" alt="facebook icon" class="social-media-icon"></a></li>
+            <li><a href="#"><img src="images/twitter.png" alt="twitter icon" class="social-media-icon"></a></li>
+            <li><a href="#"><img src="images/instagram.png" alt="instagram icon" class="social-media-icon"></a></li>
+            <li><a href="#"><img src="images/tiktok.png" alt="tiktok icon" class="social-media-icon"></a></li>
+            <li><a href="#"><img src="images/youtube.png" alt="youtube icon" class="social-media-icon"></a></li>
         </ul>
     </div>
 </section>
 <!--FOOTER------------------------------------------------------------------------------------------------------------->
 <!--The <footer> tag defines a footer for a document or section.-->
 <footer>
-    <h6 ID="footer">Copyright © 2022 by The 47 Spot. All rights reserved.</h6>
+    <img src="images/the47spotlogo.png" alt="The 47 Spot logo" ID="footer-logo">
+    <p>Copyright © 2022 by The 47 Spot. All rights reserved.</p>
 </footer>
 </body>
 </html>

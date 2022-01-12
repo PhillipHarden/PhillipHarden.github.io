@@ -6,8 +6,9 @@
 }
 body{
     background-color: black;
-    background-image: url("images/crowdjpg.jpg");
+    background-image: url("images/mic.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
     /* FIXED: The background image will not scroll with the page*/
     background-attachment: fixed;
     color: whitesmoke;
@@ -15,13 +16,13 @@ body{
     font-family: Helvetica;
 }
 /*-----REUSABLE STYLES-----------------------------*/
-.lgHeader{
+.large-header{
     font-size: 60px;
     font-family: Impact;
     text-align: center;
     padding-bottom: 50px;
 }
-.lgHeader:hover{
+.large-header:hover{
     color: red;
 }
 .centered{
@@ -50,7 +51,7 @@ section{
 header {
     background-size: cover;
     background-position: center;
-    height: 100vw;
+    height: 900px;
     background-attachment: fixed;
 }
 
@@ -74,13 +75,13 @@ header {
 .main-nav li a:active {
     border-bottom: 2px solid #d50000;
 }
-#logoImage{
+#logo-image{
     height: 200px;
     width: auto;
     float: top;
     margin-top: 50px;
 }
-#logoImage:hover{
+#logo-image:hover{
     opacity: 0.5;
 }
 .header-text{
@@ -91,80 +92,80 @@ header {
     position: center;
     margin-top: 150px;
 }
-/*-----ABOUT SECTION--------------------------------------------------------------------*/
-#about{
+/*-----ABOUT SECTION--------------------------------------------------------------------------------------------------*/
+#about-section{
     background-color: black;
-    height: 750px;
     margin-top: 150px;
 }
-.aboutText{
+.about-text{
     margin-left: 20%;
     margin-right: 20%;
     text-align: center;
     font-size: 3vmin;
 }
 /*-----SQUAD/CREW SECTION---------------------------------------------------------------------------------------------*/
-#squad{
+#squad-section{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/turntable.jpg");
     /*cover	Resize the background image to cover the entire container,
     even if it has to stretch the image or cut a little bit off one of the edges*/
     background-size: cover;
     background-attachment: fixed;
 }
-.squadImg{
+.squad-image{
     width: 200px;
     opacity: 0.5;
 }
-.squadImg:hover{
+.squad-image:hover{
     opacity: 1.0;
 }
 /*-----CITIES SECTION-------------------------------------------------------------------------------------------------*/
-#cities{
+#cities-section{
     background-image: url("images/fence.jpg");
     /*cover	Resize the background image to cover the entire container,
     even if it has to stretch the image or cut a little bit off one of the edges*/
     background-size: cover;
     background-attachment: fixed;
 }
-.citiesText{
+.cities-text{
     color: black;
 }
-.citiesHeader{
+.cities-header{
     font-size: 60px;
     font-family: Impact;
     text-align: center;
     color: black;
     padding-bottom: 50px;
 }
-.citiesImage{
+.cities-image{
     opacity: 0.5;
-    width: 300px;
+    width: 400px;
 }
-.citiesImage:hover{
+.cities-image:hover{
     opacity: 1.0;
 }
 /*--SOCIAL MEDIA------------------------------------------------------------------------------------------------------*/
-#socialMedia{
+#social-media-section{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/turntable.jpg");
     /*cover	Resize the background image to cover the entire container,
     even if it has to stretch the image or cut a little bit off one of the edges*/
     background-size: cover;
     background-attachment: fixed;
 }
-.socialMediaList{
-    text-align: center;
-}
 
-.socialMediaIcon{
+.social-media-icon{
     width: 50px;
 }
-.socialMediaIcon:hover{
+.social-media-icon:hover{
     opacity: 0.5;
 }
 /*--FOOTER------------------------------------------------------------------------------------------------------------*/
-#footer{
+footer{
     font-size: 10px;
     text-align: center;
     padding-top: 150px;
+}
+
+#footer-logo{
+    width: 100px;
 }
 /*--------------------------------------------------------------------------------------------------------------------*/
