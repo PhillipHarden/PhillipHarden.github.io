@@ -75,22 +75,39 @@ header {
 .main-nav li a:active {
     border-bottom: 2px solid #d50000;
 }
+
 #logo-image{
     height: 200px;
     width: auto;
     float: top;
     margin-top: 50px;
+    animation: fadeIn 7s;
 }
+/* The :hover selector is used to select elements when you mouse over them. */
+/* https://www.w3schools.com/cssref/sel_hover.asp  */
 #logo-image:hover{
     opacity: 0.5;
 }
+/*--------------------------------------------------------------------------------------------------------------------*/
 .header-text{
     text-align: center;
     font-family: Impact;
     /* Sizing Unit "vmin" is relative to 1% of viewport's* smaller dimension */
     font-size: 6vmin;
-    position: center;
     margin-top: 150px;
+    /* Always specify the animation-duration property, otherwise the duration is 0, and will never be played.
+    https://www.w3schools.com/cssref/css3_pr_animation.asp */
+    animation: fadeIn linear 1s;
+}
+/*-The @keyframes rule specifies the animation code.------------------------------------------------------------------*/
+/* https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 /*-----ABOUT SECTION--------------------------------------------------------------------------------------------------*/
 #about-section{
@@ -137,11 +154,7 @@ header {
     padding-bottom: 50px;
 }
 .cities-image{
-    opacity: 0.5;
     width: 400px;
-}
-.cities-image:hover{
-    opacity: 1.0;
 }
 /*--SOCIAL MEDIA------------------------------------------------------------------------------------------------------*/
 #social-media-section{
@@ -168,4 +181,3 @@ footer{
 #footer-logo{
     width: 100px;
 }
-/*--------------------------------------------------------------------------------------------------------------------*/
