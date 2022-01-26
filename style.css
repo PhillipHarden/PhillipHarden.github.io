@@ -14,7 +14,9 @@ body{
     color: whitesmoke;
     padding: 2em;
     font-family: Helvetica;
+    font-size: 18px;
 }
+
 /*-----REUSABLE STYLES-----------------------------*/
 .large-header{
     font-size: 60px;
@@ -44,6 +46,7 @@ h6{
     font-style: italic;
 }
 section{
+    height: 100vh;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -61,6 +64,7 @@ header {
     list-style: none;
     margin-top: 20px;
 }
+
 .main-nav li a:link,
 .main-nav li a:visited {
     padding: 8px 0;
@@ -71,6 +75,7 @@ header {
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.2s;
 }
+
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid #d50000;
@@ -109,6 +114,45 @@ header {
         opacity: 1;
     }
 }
+/*--FORM--------------------------------------------------------------------------------------------------------------*/
+
+form{
+    width: 250px;
+}
+
+.login-text{
+    color: red;
+}
+
+button{
+    border-radius: 12px;
+}
+.login-text{
+    margin-bottom: 5px;
+}
+.form-button{
+    padding: 5px;
+    margin-top: 5px;
+}
+.form-button:hover{
+    background-color: lavenderblush;
+    color: blue;
+}
+
+.form-text{
+    font-family: Montserrat;
+}
+
+.form-options{
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.form-options:hover{
+    color: blue;
+}
+
 /*-----ABOUT SECTION--------------------------------------------------------------------------------------------------*/
 #about-section{
     background-color: black;
