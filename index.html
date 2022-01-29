@@ -24,28 +24,31 @@
                 <li><a href="#squad-section">The Squad</a></li>
                 <li><a href="#cities-section">Cities</a></li>
                 <li><a href="#social-media-section">Social Media</a></li>
+                <li><button class="open-button" onclick="ShowLogin()">Log In</button></li>
             </ul>
         </div>
     </nav>
-<!--------------------------------------------------------------------------------------------------------------------->
-    <!--Main Login Form--->
-    <form>
-        <h1 class="login-text">Login</h1>
-        <input type="text" id="username-entry" placeholder="Username">
-        <input type="password" id="password-entry" placeholder="Password">
-        <br>
-        <button class="form-button" type="submit">Submit</button>
-        <p class="form-text">
-            <a class="form-options" href="#" id="">Create account</a>
-        </p>
-        <p class="form-text">
-            <a class="form-options" href="#" class="form-link">Continue as a guest.</a>
-        </p>
-    </form>
+    <!-- Welcome message that will change according to user input  -->
+    <h2 id="welcome-user">Welcome Guest!</h2>
 
-<!--------------------------------------------------------------------------------------------------------------------->
     <img src="images/the47spotlogo.png" alt="The 47 Spot logo" ID="logo-image" class="fade-in-image">
     <p class="header-text">HIP HOP NIGHT <br>ONCE A MONTH IN ATLANTA AND IN COLUMBUS, GEORGIA!</p>
+    <!-- LOG IN FORM  -->
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <div class="container">
+                <label for="username"><b>Username</b></label>
+                <input id="userNameInput" type="text" placeholder="Enter Username" name="username" required>
+                <label for="password"><b>Password</b></label>
+                <input id="passwordInput" type="password" placeholder="Enter Password" name="password" required>
+                <div>
+                    <button type="button" id="loginBtn" onclick="LogIn()">Log In</button>
+                    <button type="button" class="signUpBtn" onclick="SignUp()">Sign Up</button>
+                    <button type="button" class="cancelBtn cancel" onclick="HideLogin()">Cancel</button>
+                </div>
+            </div>
+        </form>
+    </div>
 
 </header>
 <!--ABOUT SECTION------------------------------------------------------------------------------------------------------>
